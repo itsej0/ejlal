@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../Controllers/LoginController.dart';
-import '../Themes/Colors.dart';
+import 'package:ejlal3/Themes/Colors.dart';
+
 
 class LoginPage extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();

@@ -5,6 +5,7 @@ import 'package:ejlal3/Controllers/HomeController.dart';
 import 'package:ejlal3/Controllers/LoginController.dart';
 import 'package:ejlal3/Themes/Colors.dart';
 import 'package:get/get.dart';
+
 import 'CoursePage.dart';
 
 class HomePage extends StatelessWidget {

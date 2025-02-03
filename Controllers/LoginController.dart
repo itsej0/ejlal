@@ -4,10 +4,10 @@ import 'package:ejlal3/Controllers/HomeController.dart';
 import 'package:ejlal3/Views/LoginPage.dart';
 import 'package:get/get.dart';
 
-import '../APIServices/DioClient.dart';
-import '../Helpers/TokenStorage.dart';
-import '../Models/LoginResponeMode.dart';
-import '../Views/HomePage.dart';
+import 'package:ejlal3/APIServices/DioClient.dart';
+import 'package:ejlal3/Helpers/TokenStorage.dart';
+import 'package:ejlal3/Models/LoginResponeMode.dart';
+import 'package:ejlal3/Views/HomePage.dart';
 
 
 class LoginController extends GetxController {

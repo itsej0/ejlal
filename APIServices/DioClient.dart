@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:ejlal3/Config/constants.dart';
 import 'package:ejlal3/Controllers/LoginController.dart';
+import 'package:ejlal3/Helpers/TokenStorage.dart';
 import 'package:get/get.dart';
 
 class DioClient {
@@ -12,10 +13,11 @@ class DioClient {
 
   DioClient() {
     _dio.interceptors.add(InterceptorsWrapper(
-      onRequest: (options, handler) {
+      onRequest: (options, handler) async{
         print(options);
         // Add access token to headers
-        final token = Get.find<LoginController>().accessToken;
+        final String? token = await TokenStorage.getAccessToken();
+
         if (token != null) {
           options.headers['Authorization'] = 'Bearer $token';
         }

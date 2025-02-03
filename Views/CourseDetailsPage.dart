@@ -4,7 +4,8 @@ import 'package:get/get.dart';
 
 import '../Controllers/CourseController.dart';
 import '../Models/CourseModel.dart';
-import '../Themes/Colors.dart';
+import 'package:ejlal3/Themes/Colors.dart';
+import 'package:ejlal3/Themes/Colors.dart';
 
 
 class CourseDetailsPage extends StatelessWidget {
@@ -19,7 +20,7 @@ class CourseDetailsPage extends StatelessWidget {
     CourseModel? course = _controller.courseDetail;
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
+        title: Text(
           "Course Details",
           style: TextStyle(
             fontWeight: FontWeight.bold,
